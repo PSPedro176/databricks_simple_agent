@@ -28,7 +28,7 @@ UC_MODEL_NAME = f"{CATALOG}.{SCHEMA}.simple_model"
 
 UC_TOOL_NAMES = [
     f"{CATALOG}.{SCHEMA}.get_customer_by_email",
-    f"{CATALOG}.{SCHEMA}.get_customer_billing_and_subscriptions"
+    f"{CATALOG}.{SCHEMA}.get_billing_and_subs"
 ]
 
 INPUT_EXAMPLE = {"input": [{
@@ -92,7 +92,7 @@ prompt_v1 = mlflow.genai.register_prompt(
 # MAGIC PROMPT_NAME = f'{CATALOG}.{SCHEMA}.demo_prompt'
 # MAGIC UC_TOOL_NAMES = [
 # MAGIC     f"{CATALOG}.{SCHEMA}.get_customer_by_email",
-# MAGIC     f"{CATALOG}.{SCHEMA}.get_customer_billing_and_subscriptions"
+# MAGIC     f"{CATALOG}.{SCHEMA}.get_billing_and_subs"
 # MAGIC ]
 # MAGIC SYSTEM_PROMPT = mlflow.genai.load_prompt(name_or_uri=f"prompts:/{PROMPT_NAME}/3").template
 # MAGIC
