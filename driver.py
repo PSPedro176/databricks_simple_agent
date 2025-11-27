@@ -17,7 +17,7 @@ import pandas
 
 # DBTITLE 1,Variáveis
 # TODO: Atualizar
-CATALOG = 'perdomo_demos'
+CATALOG = 'demo_catalog'
 SCHEMA = 'demo_agents'
 #################
 
@@ -84,7 +84,7 @@ prompt_v1 = mlflow.genai.register_prompt(
 # MAGIC # Define your LLM endpoint and system prompt
 # MAGIC ############################################
 # MAGIC # TODO: Atualizar
-# MAGIC CATALOG = 'perdomo_demos'
+# MAGIC CATALOG = 'demo_catalog'
 # MAGIC SCHEMA = 'demo_agents'
 # MAGIC #################
 # MAGIC LLM_ENDPOINT_NAME = "databricks-claude-3-7-sonnet"
@@ -357,7 +357,7 @@ results = mlflow.genai.evaluate(data=eval_dataset, predict_fn=predict_wrapper, s
 # DBTITLE 1,Criando labeling session
 session = mlflow.genai.labeling.create_labeling_session(
     name="model_session_feedback",
-    assigned_users=["pedro.perdomo@databricks.com"],
+    assigned_users=["your.email@email.com"],
     label_schemas=["feedback", "nps"]
 )
 
